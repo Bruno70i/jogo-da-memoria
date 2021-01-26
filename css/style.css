@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+}
+
+.bg{    
+    background-image: url("../img/img-layout/tintabackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: rgb(226, 241, 12);
+    text-align: left;
+    margin: 50px;
+    position: relative;
+    font-size: 50px;
+}
+
+/* margin: 50px 1000px 0px 0px; */
+
+p{
+    color: rgb(255, 251, 10);
+    text-align: left;
+    margin: 30px;
+    position: relative;
+    font-size: 20px;
+}
+
+img#logo{
+    position: relative;
+    left: 350px;
+    top: -207px;
+}
+
+#legendaAB{
+    position: absolute;
+    left: 2px;
+    top: 300px;
+    z-index: 1;
+}
+
+audio#musica{
+
+    width: 10%;
+}
+
+#container{
+    width: 1325px;
+    height: 495px;
+    border: 1px solid #111;
+    position: relative;
+    margin: -90px auto 45px;
+    border-radius: 10px;
+    background-color: rgb(6, 7, 7);
+}
+
+.card{
+    width: 160px;
+    height: 240px;
+    position: absolute;
+    border-radius: 10px;
+    perspective: 600px;
+}
+
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 1s;
+    backface-visibility: hidden;
+}
+
+.back{
+    background: url("..//img/verso.jpg");
+}
+
+.back.flipped{
+    transform: rotateY(180deg);
+}
+
+.front{
+    transform: rotateY(-180deg);
+}
+
+.front.flipped{
+    transform: rotateY(0deg);
+}
+
+.card:hover{
+    box-shadow: 0 0 30px rgb(228, 49, 17);
+}
+
+.face.flipped.match{
+    box-shadow: 0 0 10px #0f0;
+}
+
+#modalGameOver{    
+    position: absolute;
+    z-index: -2;
+
+}
+
+/* #modalGameOver{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -2;
+} */
+
+#imgGameOver{
+    margin: -550px 0px 150px 350px;
+}
+
+#imgMatchSign{
+    position: relative;
+    top: 250px;
+    transition-property: top, opacity;
+    transition-duration: 1.5s;
+    opacity: 1;
+    z-index: -1;
+}
+
+p#direito{
+    color: rgb(52, 236, 15);
+    text-align: center;
+    margin: -10px 10px;
+}
